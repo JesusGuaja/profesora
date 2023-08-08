@@ -1,0 +1,20 @@
+<!-- LEE NUESTRO ARRAY INFO-->
+<div *ngFor="let i of info" class="div">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{i.titulo}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{i.image}}" alt="{{i.alt}}" class="imagen">
+        <mat-card-content>
+          <p class="descripcion">
+            {{i.descripcion}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+      
+</div>
