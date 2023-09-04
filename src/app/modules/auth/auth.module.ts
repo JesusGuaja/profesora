@@ -9,6 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
 
 import { FormsModule } from '@angular/forms';
 
@@ -25,7 +26,16 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule
+  ],
+  exports: [
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule,
+    MatSelectModule
   ]
 })
 export class AuthModule { 

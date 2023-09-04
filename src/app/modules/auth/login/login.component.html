@@ -6,16 +6,13 @@
 
         
             <mat-form-field appearance="fill">
-              <mat-label>Ingrese un nombre de usuario:</mat-label>
-              <input matInput placeholder="">
+              <mat-label>Ingrese un email:</mat-label>
+              <input [(ngModel)]="usuarios.email" matInput>
             </mat-form-field>
         
         <mat-form-field>
-            <mat-label>Ingrese una contraseña: </mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
+            <mat-label>Ingrese una contraseña:</mat-label>
+            <input [(ngModel)]="usuarios.contrasena" matInput>
         </mat-form-field>
         
         <button mat-raised-button color="primary">Ingresar</button>
